@@ -1,0 +1,72 @@
+<html>
+	
+	<head>	
+		<link href = "./PersonalSiteStyle.css" rel = "stylesheet"/>		
+		
+		<br />
+		
+		<ul>
+			
+			<li> <a href = "./HomePage.html"> Home </a> </li>
+			<li> <a href = "./AboutPage.html"> About </a> </li>
+			<li> <a href = "./PortfolioPage.html"> Portfolio </a> </li>
+		</ul>
+		
+		<style>
+			#map{
+				height: 400px;
+				width: 400px;
+				}
+		</style>
+	</head>
+	
+	<body>
+		<br />
+		<h1>Genie's Site</h1>
+		
+		<img src = "ProfilePic.jpg" width = "200" height = "200" />
+		
+		<h2>Hello, Im Genie (^_^)</h2>
+		
+		<br />
+			
+			<h3> My Interest </h3>
+			
+			<p>I love music of all genres. I enjoy hanging out with family. I love gaming in my free time. Just got into gardening and 
+			taking care of plants. Getting more into reading. Love anime, comedies, and Top Chef.</p>
+			
+			<h3>Development</h3>
+			
+			<p>I became interested in development from making short games in RPG maker. Learned more periodically on my own. I learned
+			C#, Java, HTML, CSS, Git, Command Console, and other computer languages.</p>
+			
+			<h3>HomeTown</h3>
+			
+			<p>I was born and raised in Detroit Michigan.</p>
+			
+			<div id = "map"></div>
+			
+			<script>
+				function initMap()
+				{
+					var Detroit = {lat: 42.331429, lng: -83.045753};
+					
+					var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: Detroit});
+					
+					var marker = new google.maps.Maker({position: Detroit, map: map});					
+				}
+			</script> 
+			
+			  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5RudABUpWtyxiafPAtSNtizaSxNnIK7s&callback=initMap" type = "text/javascript">
+			  </script>
+			
+			
+			
+			
+	</body>
+	
+
+<footer>	
+	<h4>Site By EFHill</h4>	
+</footer>
+</html>
